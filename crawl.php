@@ -161,7 +161,9 @@ class Crawler{
 
     public function removeFile($filename){
         $this->fileName = $filename;
-        unlink($filename);
+        if (file_exists($this->fileName)) {
+            unlink($this->fileName);
+        }
     }
 }
 
