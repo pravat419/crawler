@@ -13,3 +13,6 @@ The crawl.php will retrieve the HTML source from https://www.cochranelibrary.com
 After I grab all the topics link in a array variable $this->topicsurl, then I am rotating each of these URLs and fetching the HTML source of these pages. Then I am fetching the Title, Author, Publish Data and I already have topics URL & Topic Title which I am storing into output.txt file by concatenating "|" to each of these data and then all Topics inserted into a new line in the output.txt file.
 
 You can add any topics into this array variable $topicsSearch = ["Allergy & intolerance"]; to fetch the topics details of those specified topics.
+
+# Note
+Looks like https://www.cochranelibrary.com is not allowing any script or crawler to crawl to their Website, so this script is going to throw 419 http status code error. But the code is going to work once they disabled this crawler Disallow script. The business logic is written as per the requirement and tested with some sample data but some it won't work with https://www.cochranelibrary.com due their restriction.
