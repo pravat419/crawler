@@ -15,4 +15,4 @@ After I grab all the topics link in a array variable $this->topicsurl, then I am
 You can add any topics into this array variable $topicsSearch = ["Allergy & intolerance"]; to fetch the topics details of those specified topics.
 
 # Note
-Looks like https://www.cochranelibrary.com is not allowing any script or crawler to crawl to their Website, so this script is going to throw 419 http status code error. But the code is going to work once they disabled this crawler Disallow script. The business logic is written as per the requirement and tested with some sample data but some it won't work with https://www.cochranelibrary.com due their restriction.
+Looks like https://www.cochranelibrary.com is not allowing any script or crawler to crawl to their Website, so this script is going to throw 419 http status code error. But the code is going to work once they disabled this crawler Disallow script. The business logic is written as per the requirement and tested with some sample data but some it won't work with https://www.cochranelibrary.com due to their restriction.
